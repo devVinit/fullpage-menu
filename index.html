@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FullPageMenu</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+	<link rel="stylesheet" href="hamburgers.css">
+	
+</head>
+<body>
+	<header>
+		<button class="hamburger hamburger--collapse" onclick="openNav()">
+			Open
+		</button>
+		<h1 class="page-header">Hello</h1>
+	</header>
+
+	<section id="red"class="main-menu red">
+		<h1></h1>
+	</section>
+
+	<section id="open" class="main-menu">
+		<a href="#" class="close" onclick="closeNav()">x</a>
+	</section>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		function openNav() {
+			document.getElementById('open').style.width = "100%";
+			document.getElementById('red').style.width = "100%";
+			document.getElementById('red').style.transition = "all 0.3s";
+		}	
+
+		function closeNav() {
+			document.getElementById('open').style.width = "0%";
+			document.getElementById('red').style.width = "0%";
+
+			document.getElementById('red').style.transition = "all 0.9s";
+		}
+		
+	</script>
+</body>
+</html>

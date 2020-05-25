@@ -1,0 +1,61 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+header{
+	min-height: 100vh;
+	background-color: lightblue;
+}
+
+.none{
+	display: none;
+}
+
+.menu-icon{
+	font-size: 50px;
+}
+
+.menu-icon h1{
+	text-decoration: none;
+}
+
+.page-header{
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	font-size: 300px;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.main-menu{
+	position: fixed;
+	overflow-x: hidden;
+	top: 0%;
+	left: 0%;
+	width: 0%;
+	min-height: 100vh;
+	background-color: purple;
+	transition: all 0.6s;
+	z-index: 5;
+}
+
+.red{
+	width: 0%;
+	background-color: red;
+	transition: all 0.3s;
+}
+
+.menu-header{
+	margin: 0px;
+	padding: 50px;
+}
+
+.close{
+	text-decoration: none;
+	color: black;
+	font-size: 50px;
+	font-family: sans-serif;
+	margin: 50px;
+}
